@@ -46,9 +46,28 @@ No cryptographic keys are permanently stored on the server.
 
 ---
 
-## User Interaction
+## How to Run the System
 
-After successful authentication, the client displays the following menu:
+## 1. Start the Server
+
+Open a terminal in the project directory and run:
+
+bash
+python3 server.py
+The server will start listening for client connections.
+
+## 2. Start a Client
+Open another terminal (or another machine) and execute:
+
+bash
+Copy code
+python3 client.py
+Enter your phone number to register or log in.
+A one-time passcode (OTP) will be generated for authentication.
+
+## 3. Use the Menu
+
+After successful login, the following menu appears:
 
 --- MENU ---
 
@@ -63,10 +82,15 @@ After successful authentication, the client displays the following menu:
 5. Quit application
 (Type 'menu' anytime to return)
 
-
-Messages sent to users who are offline are queued and delivered once they reconnect.
+Select the desired option by entering the corresponding number.
 
 ---
+
+## 4. Sending Messages
+
+Messages are encrypted using a session key derived from an ECC key exchange.
+
+If the recipient is offline, the message is queued and delivered when they reconnect.
 
 ## Availability Considerations
 
