@@ -87,7 +87,7 @@ These mechanisms ensure continuity and usability even in unstable network condit
 Daria Kokin (`KODARIA26`)  
 Maor Shoval (`maorshoval`)
 
-Developed as part of the "Online Space Security" university course.
+Developed as part of the "Cyber Security" university course.
 
 ---
 
